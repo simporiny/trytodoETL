@@ -22,7 +22,7 @@ def load_data(df, db_url, table_name):
 
 def run_etl():
     file_path = "D:\Python\source\source1.json"
-    db_url = 'postgresql+psycopg2://postgres:012545@localhost/postgres'
+    db_url = 'postgresql+psycopg2://postgres:#####@localhost/postgres'
     table_name = 'json_file'
 
     df = extract_data(file_path)
@@ -31,4 +31,5 @@ def run_etl():
     print("ETL process completed successfully.")
 
 if __name__ == "__main__":
+
     run_etl()
