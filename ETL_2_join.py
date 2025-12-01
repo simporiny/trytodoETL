@@ -42,7 +42,7 @@ def run_etl():
     """Run the full ETL process."""
     file_path_1 = 'C:\\Users\\USER\\Downloads\\Tableau\\results.csv'
     file_path_2 = 'C:\\Users\\USER\\Downloads\\Tableau\\stats.csv'
-    db_url = 'postgresql+psycopg2://postgres:012545@localhost/postgres'
+    db_url = 'postgresql+psycopg2://postgres:#####@localhost/postgres'
     table_name = 'result'
 
     # data = extract_data(file_path)
@@ -54,3 +54,4 @@ def run_etl():
 
 if __name__ == "__main__":
     run_etl()
+
