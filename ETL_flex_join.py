@@ -42,16 +42,16 @@ def load_data(df, db_url, table_name):
 def run_etl():
     """Run the full ETL process."""
     file_paths =[
-        'C:\\Users\\USER\\Downloads\\DA BTSG Test\\transaction_data.csv',
-        'C:\\Users\\USER\\Downloads\\DA BTSG Test\\day_key.csv',
-        'C:\\Users\\USER\\Downloads\\DA BTSG Test\\product.csv'
+        'C:\\Users\\USER\\Downloads\\DA\\transaction_data.csv',
+        'C:\\Users\\USER\\Downloads\\DA\\day_key.csv',
+        'C:\\Users\\USER\\Downloads\\DAt\\product.csv'
     ]
     join_keys = [
         'DAY',  # join results.csv and stats.csv on 'season'
         'PRODUCT_ID'  # join results.csv and stats.csv on 'season'
     ]
 
-    db_url = 'postgresql+psycopg2://postgres:012545@localhost/postgres'
+    db_url = 'postgresql+psycopg2://postgres:######@localhost/postgres'
     table_name = 'result'
     
 
@@ -61,4 +61,5 @@ def run_etl():
     print("ETL process completed successfully.")
 
 if __name__ == "__main__":
+
     run_etl()
